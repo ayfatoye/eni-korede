@@ -1,18 +1,37 @@
-import './App.css'
-import NavComponent from './components/NavComponent'
-import CenterPageNames from './components/CenterPageNames.tsx'
+import "./App.css";
+import Home from "./components/Home";
+
 
 function App() {
-  
-
   return (
     <>
-        <NavComponent />
-        <img src="/eni-kore-1.jpg" alt='the bride and groom' className='w-full h-[80vh] object-cover object-left' />
-        <CenterPageNames />
-        
+      <div className="flex flex-col items-center justify-between h-[20vh] w-[100vw] bg-white">
+        {/* <h3 className="text-3xl text-[#717769] font-bold mt-2">ENIOLA & AKOREDE</h3> */}
+        <h3 className="text-5xl text-[#717769] font-medium mt-2">
+          ENIOLA & AKOREDE
+        </h3>
+
+        <ul className="flex flex-row list-none space-x-4 mb-2 text-[#717769] font-normal text-2xl">
+          <li className="hover:underline underline-offset-[8px]">
+            <a href="#">Home</a>
+          </li>
+          <li className="hover:underline underline-offset-[8px]">
+            <a href="#">Schedule</a>
+          </li>
+          <li className="hover:underline underline-offset-[8px]">
+            <a href="#">Registry</a>
+          </li>
+          <li className="hover:underline underline-offset-[8px]">
+            <a href="#">RSVP</a>
+          </li>
+        </ul>
+      </div>
+
+      <Home />
+      {/* <RSVP /> */}
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;

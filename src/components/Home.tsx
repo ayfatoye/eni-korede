@@ -15,4 +15,19 @@ function CenterPageNames(){
     );
 }
 
-export default CenterPageNames;
+function Home() {
+
+
+  return (
+    <div>
+      <img
+        src="/eni-kore-1.jpg"
+        alt="the bride and groom"
+        className="w-full h-[80vh] object-cover object-left"
+      />
+      <CenterPageNames />
+    </div>
+  );
+}
+
+export default Home;
