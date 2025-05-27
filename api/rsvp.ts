@@ -24,6 +24,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     );
 
     const sheets = google.sheets({ version: 'v4', auth });
+    console.log('Authenticated with Google Sheets API');
+    console.log("GOOGLE_SHEET_ID:", process.env.GOOGLE_SHEET_ID);
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID!,
