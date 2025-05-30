@@ -12,7 +12,9 @@ type formData = {
 };
 
 function RSVP() {
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -21,10 +23,16 @@ function RSVP() {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
+    alert("Submitting RSVP...");
+    console.log("WHAT THE FUCK!!")
     e.preventDefault();
     try {
       axios
-        .post("http://localhost:3000/api/rsvp", formData)
+        .post("http://localhost:3000/api/rsvp", formData, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
         .then((response) => {
           console.log("RSVP submitted successfully:", response.data);
         });
@@ -39,13 +47,13 @@ function RSVP() {
     attending: true,
     phoneNumber: "",
     phoneProvider: "",
-    countryCode: "+1", 
-    invitorName: ""
+    countryCode: "+1",
+    invitorName: "",
   });
 
   return (
     <>
-      <div className="flex flex-col w-[736px] py-8 px-4 text-[#717769] bg-[#71776914]">
+      <div className="flex flex-col mt-[75px] md:mt-0 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] py-8 px-4 text-[#717769] bg-[#71776914]">
         <p className="">
           Please fill out the form below. Note that we are not allowing plus
           ones at this time, thank you for coming to our wedding :)
@@ -59,7 +67,7 @@ function RSVP() {
               placeholder="FirstName LastName"
               value={formData.name}
               onChange={handleChange}
-              className="pl-2 placeholder:font-semibold border bg-white py-2 my-2 text-[#717769]"
+              className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 my-2 text-[#717769]"
             />
             <input
               type="text"
@@ -67,7 +75,7 @@ function RSVP() {
               placeholder="Email Address"
               value={formData.email}
               onChange={handleChange}
-              className="pl-2 placeholder:font-semibold border bg-white py-2 my-2"
+              className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 my-2"
             />
 
             <label>
@@ -81,7 +89,7 @@ function RSVP() {
                     attending: e.target.value === "yes",
                   }))
                 }
-                className="pl-2 placeholder:font-semibold border bg-white py-2 mx-2 my-2"
+                className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 mx-2 my-2"
               >
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
@@ -105,28 +113,35 @@ function RSVP() {
                 placeholder="e.g: 8328450812 or 08162548259"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                className="pl-2 placeholder:font-semibold border bg-white py-2 flex-1 my-2"
+                className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 flex-1 my-2"
               />
             </div>
 
-             <input
-                type="text"
-                name="phoneProvider"
-                placeholder="e.g: ATT, MTN"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                className="pl-2 placeholder:font-semibold border bg-white py-2 flex-1 my-2"
-              />
+            <input
+              type="text"
+              name="phoneProvider"
+              placeholder="e.g: ATT, MTN"
+              value={formData.phoneProvider}
+              onChange={handleChange}
+              className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 flex-1 my-2"
+            />
 
-               <input
-                type="text"
-                name="invitorName"
-                placeholder="e.g: Name of person who invited you"
-                value={formData.invitorName}
-                onChange={handleChange}
-                className="pl-2 placeholder:font-semibold border bg-white py-2 flex-1 my-2"
-              />
-
+            <input
+              type="text"
+              name="invitorName"
+              placeholder="e.g: Name of person who invited you"
+              value={formData.invitorName}
+              onChange={handleChange}
+              className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 flex-1 my-2"
+            />
+            <div>
+              <button
+                type="submit"
+                className="bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-white w-[200px] mt-6 rounded-md text-lg py-2"
+              >
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>

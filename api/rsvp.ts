@@ -1,13 +1,31 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { google } from 'googleapis';
 
+const allowedOrigins = [
+  "http://localhost:5173"
+];
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const origin = req.headers.origin || "";
+
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
+
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // Handle preflight OPTIONS request
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
   try {
     if (req.method !== 'POST') {
       return res.status(405).send('Only POST allowed');
     }
 
-    const { name, email, attending, phoneNumber, phoneProvider, invitorName } = req.body;
+    const { name, email, attending, phoneNumber, phoneProvider, invitorName, countryCode } = req.body;
 
     // Validate required fields
     if (!name || !email || !attending || !phoneNumber || !invitorName) {
@@ -25,14 +43,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const sheets = google.sheets({ version: 'v4', auth });
     console.log('Authenticated with Google Sheets API');
-    console.log("GOOGLE_SHEET_ID:", process.env.GOOGLE_SHEET_ID);
+
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID!,
       range: 'RSVPs!A2',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
-        values: [[name, email, attending, phoneNumber, phoneProvider || '', invitorName]],
+        values: [[name, email, attending, phoneNumber, phoneProvider || '', countryCode, invitorName]],
       },
     });
 
