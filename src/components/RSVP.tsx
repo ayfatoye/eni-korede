@@ -53,7 +53,7 @@ function RSVP() {
 
   return (
     <>
-      <div className="flex flex-col mt-[75px] md:mt-0 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] py-8 px-4 text-[#717769] bg-[#71776914]">
+      <div className="flex flex-col mt-[75px] max-h-[325px]:mt-[120px] md:mt-0 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] py-8 px-4 text-[#717769] bg-[#71776914]">
         <p className="">
           Please fill out the form below. Note that we are not allowing plus
           ones at this time, thank you for coming to our wedding :)
