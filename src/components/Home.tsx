@@ -32,7 +32,7 @@ function CenterPageNames() {
 
 function Home({ onRSVPClick }: { onRSVPClick: () => void }) {
   return (
-    <div className="w-full">
+    <div className="w-screen">
       <img
         src="/eni-kore-1.jpg"
         alt="the bride and groom"

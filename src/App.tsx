@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./components/Home";
 import RSVP from "./components/RSVP";
 import { useState } from "react";
+import Schedule from "./components/Schedule";
 
 function Hamburger({ onClick }: { onClick?: () => void }) {
   return (
@@ -19,7 +20,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative min-h-[556px]">
       {menuOpen == true && (
         <>
           <div className="fixed md:hidden inset-0 w-full h-full bg-gray-900 opacity-50 z-30" />
@@ -143,6 +144,7 @@ function App() {
             </p>{" "}
           </div>
         )}
+        {selected === "schedule" && <Schedule />}
       </div>
       <div className="w-full flex justify-center">
         <img
