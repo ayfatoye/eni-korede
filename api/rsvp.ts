@@ -2,7 +2,9 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { google } from 'googleapis';
 
 const allowedOrigins = [
-  "http://localhost:5173"
+  "http://localhost:5173",
+  "https://bit.ly/eni-korede",
+  "https://eni-korede.vercel.app/"
 ];
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

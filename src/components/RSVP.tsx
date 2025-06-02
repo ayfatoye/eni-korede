@@ -28,7 +28,7 @@ function RSVP() {
     e.preventDefault();
     try {
       axios
-        .post("http://localhost:3000/api/rsvp", formData, {
+        .post("/api/rsvp", formData, {
           headers: {
             "Content-Type": "application/json",
           },
