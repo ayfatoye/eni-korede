@@ -47,7 +47,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const sheets = google.sheets({ version: 'v4', auth });
     console.log('Authenticated my fine ass with Google Sheets API');
 
-    const rawKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n');
+    const rawKey = process.env.GOOGLE_PRIVATE_KEY;
+    // const rawKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n');
 
     if (!rawKey) {
       console.error("GOOGLE_PRIVATE_KEY is not defined");
