@@ -37,10 +37,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
 
+    // const auth = new google.auth.JWT(
+    //   process.env.GOOGLE_CLIENT_EMAIL,
+    //   undefined,
+    //   process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+    //   ['https://www.googleapis.com/auth/spreadsheets']
+    // );
+
     const auth = new google.auth.JWT(
       process.env.GOOGLE_CLIENT_EMAIL,
       undefined,
-      process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+      process.env.GOOGLE_PRIVATE_KEY,
       ['https://www.googleapis.com/auth/spreadsheets']
     );
 
