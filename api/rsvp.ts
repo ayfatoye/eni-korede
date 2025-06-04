@@ -35,6 +35,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         error: 'Missing required fields: name, email, attending, phoneNumber, or invitorName',
       });
     }
+    const rawKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n');
+
+    if (!rawKey) {
+      console.error("GOOGLE_PRIVATE_KEY is not defined");
+    } else {
+      console.log("GOOGLE_PRIVATE_KEY preview:", {
+        length: rawKey.length,
+        startsWith: rawKey.slice(0, 50), // first few characters
+        endsWith: rawKey.slice(-50),     // last few characters
+        lineCount: rawKey.split('\n').length
+      });
+    }
+
 
     const auth = new google.auth.JWT(
       process.env.GOOGLE_CLIENT_EMAIL,
