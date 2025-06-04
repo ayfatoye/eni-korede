@@ -35,6 +35,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         error: 'Missing required fields: name, email, attending, phoneNumber, or invitorName',
       });
     }
+
+
+    const auth = new google.auth.JWT(
+      process.env.GOOGLE_CLIENT_EMAIL,
+      undefined,
+      process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+      ['https://www.googleapis.com/auth/spreadsheets']
+    );
+
+    const sheets = google.sheets({ version: 'v4', auth });
+    console.log('Authenticated my fine ass with Google Sheets API');
+
     const rawKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n');
 
     if (!rawKey) {
@@ -47,17 +59,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         lineCount: rawKey.split('\n').length
       });
     }
-
-
-    const auth = new google.auth.JWT(
-      process.env.GOOGLE_CLIENT_EMAIL,
-      undefined,
-      process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-      ['https://www.googleapis.com/auth/spreadsheets']
-    );
-
-    const sheets = google.sheets({ version: 'v4', auth });
-    console.log('Authenticated with Google Sheets API');
 
 
     await sheets.spreadsheets.values.append({
