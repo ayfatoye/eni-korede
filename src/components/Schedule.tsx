@@ -6,7 +6,7 @@ function Schedule() {
           <p className="text-[#717769] pt-12 md:hidden text-2xl md:text-3xl font-bold md:font-semibold mt-2">
             SCHEDULE
           </p>
-          <p className="text-[#717769] text-3xl md:text-4xl font-bold md:font-medium md:pb-12 mt-2">
+          <p className="text-[#717769] text-3xl md:text-4xl font-bold md:font-medium md:pb-6 mt-2">
             Saturday, December 20, 2025
           </p>
           <img
@@ -15,7 +15,7 @@ function Schedule() {
             className="w-9 h-9"
           />
         </div>
-        <div className="flex flex-col justify-between w-full pt-12 h-1/2">
+        <div className="flex flex-col justify-between w-full pt-12 h-1/4">
           <div>
             <p className="text-[#717769] text-2xl md:text-4xl font-bold md:font-medium">
               TRADITIONAL WEDDING
@@ -24,7 +24,14 @@ function Schedule() {
               12:00 am - 10:15 am
             </p>
           </div>
-          <div className="mt-16">
+          <div className="mt-12 mb-10">
+            <div className="flex items-center justify-center mb-6">
+              <img
+                src="/icons8-hearts-50.png"
+                alt="Icon of two linked hearts"
+                className="w-9 h-9"
+              />
+            </div>
             <p className="text-[#717769] text-2xl md:text-4xl font-bold md:font-medium">
               WHITE PEOPLE WEDDING
             </p>
