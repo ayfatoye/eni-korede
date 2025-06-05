@@ -24,7 +24,7 @@ function RSVP() {
 
   const handleSubmit = (e: React.FormEvent) => {
     alert("Submitting RSVP...");
-    console.log("WHAT THE FUCK!!")
+    // console.log("WHAT THE FUCK!!")
     e.preventDefault();
     try {
       axios
@@ -52,8 +52,16 @@ function RSVP() {
   });
 
   return (
-    <>
-      <div className="flex flex-col mt-[75px] max-h-[325px]:mt-[120px] md:mt-0 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] py-8 px-4 text-[#717769] bg-[#71776914]">
+    <div className="w-full flex flex-col items-center justify-center">
+      <div className="flex justify-center items-center mt-[75px] max-h-[325px]:mt-[120px] md:mt-8 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] text-[#717769]">
+        <img
+          src="/eni-kore-3.jpeg"
+          alt="the bride and groom"
+          className="w-4/5 h-[120vh] object-cover object-[30%_55%]"
+        />
+      </div>
+
+      <div className="flex flex-col rounded-2xl mt-[25px] max-h-[325px]:mt-[120px] md:mt-0 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] py-8 px-4 text-[#717769] bg-[#71776914]">
         <p className="">
           Please fill out the form below. Note that we are not allowing plus
           ones at this time, thank you for coming to our wedding :)
@@ -145,7 +153,7 @@ function RSVP() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

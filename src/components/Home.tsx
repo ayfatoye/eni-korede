@@ -34,9 +34,9 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void }) {
   return (
     <div className="w-screen">
       <img
-        src="/eni-kore-1.jpg"
+        src="/eni-kore-2.jpeg"
         alt="the bride and groom"
-        className="w-full h-[120vh] object-cover object-[10%_35%]"
+        className="w-full h-[120vh] object-cover object-[30%_55%]"
       />
       <CenterPageNames />
       <div>
