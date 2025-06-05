@@ -179,7 +179,7 @@ function RSVP() {
             <div>
               <button
                 type="submit"
-                className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-white w-[200px] mt-6 rounded-md text-lg py-2"
+                className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black w-[200px] mt-6 rounded-md text-lg py-2"
               >
                 Submit
               </button>
