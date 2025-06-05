@@ -61,7 +61,7 @@ function RSVP() {
     alert("Submitting RSVP...");
     try {
       axios
-        .post("http://localhost:3000/api/rsvp", formData, {
+        .post("https://eni-korede.vercel.app/api/rsvp", formData, {
           headers: {
             "Content-Type": "application/json",
           },
