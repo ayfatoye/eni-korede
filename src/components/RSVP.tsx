@@ -23,12 +23,45 @@ function RSVP() {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    alert("Submitting RSVP...");
     // console.log("WHAT THE FUCK!!")
     e.preventDefault();
+    const { name, email, attending, phoneNumber, countryCode, invitorName } =
+      formData;
+
+    if (attending) {
+      if (
+        !name.trim() ||
+        !email.trim() ||
+        !phoneNumber.trim() ||
+        !countryCode.trim() ||
+        !invitorName?.trim()
+      ) {
+        alert("If attending, please fill all fields.");
+        return;
+      }
+
+      const phoneRegex = /^\d{10,11}$/;
+      if (!phoneRegex.test(phoneNumber)) {
+        alert("Please format phoneNumber field correctly.");
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please format email field correctly.");
+        return;
+      }
+    }
+    else{
+      if(!name.trim()){
+        alert("Please include your full name");
+        return;
+      }
+    }
+    alert("Submitting RSVP...");
     try {
       axios
-        .post("https://eni-korede.vercel.app/api/rsvp", formData, {
+        .post("http://localhost:3000/api/rsvp", formData, {
           headers: {
             "Content-Type": "application/json",
           },

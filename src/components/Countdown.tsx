@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function Countdown() {
   const calculateTimeLeft = () => {
-    const target = new Date("2025-12-20T06:00:00-00:00");
+    const target = new Date("2025-12-20T10:00:00-06:00");
     const now = new Date();
     const difference = target.getTime() - now.getTime();
 
