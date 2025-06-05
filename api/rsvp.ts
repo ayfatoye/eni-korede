@@ -30,11 +30,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const { name, email, attending, phoneNumber, phoneProvider, invitorName, countryCode } = req.body;
 
     // Validate required fields
-    if (!name || !email || !attending || !phoneNumber || !invitorName) {
-      return res.status(400).json({
-        error: 'Missing required fields: name, email, attending, phoneNumber, or invitorName',
-      });
-    }
+    // if (!name || !email || !attending || !phoneNumber || !invitorName) {
+    //   return res.status(400).json({
+    //     error: 'Missing required fields: name, email, attending, phoneNumber, or invitorName',
+    //   });
+    // }
 
 
     // const auth = new google.auth.JWT(

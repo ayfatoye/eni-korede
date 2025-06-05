@@ -52,7 +52,7 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void }) {
         <Countdown />
         <button
           onClick={onRSVPClick}
-          className="bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2"
+          className=" bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-white min-w- w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2"
         >
           RSVP
         </button>
