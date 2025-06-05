@@ -59,6 +59,7 @@ function RSVP() {
       }
     }
     alert("Submitting RSVP...");
+    console.log("oh, what fucking now");
     try {
       axios
         .post("https://eni-korede.vercel.app/api/rsvp", formData, {
