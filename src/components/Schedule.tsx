@@ -35,7 +35,7 @@ function Schedule() {
               />
             </div>
             <p className="text-[#717769] text-2xl md:text-4xl font-bold md:font-medium">
-              WHITE PEOPLE WEDDING
+              WHITE WEDDING
             </p>
             <p className="text-[#717769] text-2xl md:text-4xl font-medium">
               05:00 pm - 06:30 pm
