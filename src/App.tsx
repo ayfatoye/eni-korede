@@ -67,7 +67,7 @@ function App() {
                     selected === "registry" ? "underline" : ""
                   } hover:underline underline-offset-[8px]`}
                 >
-                  <a href="#">Registry</a>
+                  <a href="https://www.amazon.com/wedding/share/eni-korede">Registry</a>
                 </li>
                 <li
                   onClick={() => setSelected("rsvp")}
@@ -119,7 +119,7 @@ function App() {
               selected === "registry" ? "underline" : ""
             } hover:underline underline-offset-[8px]`}
           >
-            <a href="#">Registry</a>
+            <a href="https://www.amazon.com/wedding/share/eni-korede">Registry</a>
           </li>
           <li
             onClick={() => setSelected("rsvp")}
