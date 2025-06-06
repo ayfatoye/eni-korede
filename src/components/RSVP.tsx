@@ -69,8 +69,9 @@ function RSVP() {
             "Content-Type": "application/json",
           },
         })
-        .then((response) => {
+        .then(() => {
           alert("RSVP Submitted!");
+          // console.log("RSVP submitted successfully:", response.data);
         });
     } catch (error) {
       console.error("Error submitting RSVP:", error);
