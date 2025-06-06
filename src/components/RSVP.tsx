@@ -60,7 +60,7 @@ function RSVP() {
         return;
       }
     }
-    alert("Submitting RSVP...");
+    
     // console.log("oh, what fucking now");
     try {
       axios
@@ -70,7 +70,7 @@ function RSVP() {
           },
         })
         .then((response) => {
-          console.log("RSVP submitted successfully:", response.data);
+          alert("RSVP Submitted!");
         });
     } catch (error) {
       console.error("Error submitting RSVP:", error);
