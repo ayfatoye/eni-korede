@@ -25,7 +25,7 @@ function RSVP() {
   const handleSubmit = (e: React.FormEvent) => {
     // console.log("WHAT THE FUCK!!")
     e.preventDefault();
-    const { name, email, attending, phoneNumber, countryCode, invitorName } =
+    const { name, email, attending, phoneNumber, phoneProvider, countryCode, invitorName } =
       formData;
 
     if (attending) {
@@ -33,6 +33,7 @@ function RSVP() {
         !name.trim() ||
         !email.trim() ||
         !phoneNumber.trim() ||
+        !phoneProvider.trim() ||
         !countryCode.trim() ||
         !invitorName?.trim()
       ) {
@@ -42,7 +43,7 @@ function RSVP() {
 
       const phoneRegex = /^\d{10,11}$/;
       if (!phoneRegex.test(phoneNumber)) {
-        alert("Please format phoneNumber field correctly.");
+        alert("Please format Phone Number field correctly.");
         return;
       }
 
@@ -51,6 +52,7 @@ function RSVP() {
         alert("Please format email field correctly.");
         return;
       }
+
     }
     else{
       if(!name.trim()){
