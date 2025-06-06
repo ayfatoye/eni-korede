@@ -165,7 +165,7 @@ function RSVP() {
             <input
               type="text"
               name="phoneProvider"
-              placeholder="e.g: ATT, MTN"
+              placeholder="PhoneProvider, e.g: T-Mobile, MTN"
               value={formData.phoneProvider}
               onChange={handleChange}
               className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 flex-1 my-2"
