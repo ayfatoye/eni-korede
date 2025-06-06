@@ -58,16 +58,12 @@ function App() {
                 <li
                   onClick={() => {
                     setSelected("registry");
-                    window.open(
-                      "https://www.amazon.com/wedding/share/eni-korede",
-                      "_blank"
-                    );
                   }}
                   className={`${
                     selected === "registry" ? "underline" : ""
                   } hover:underline underline-offset-[8px]`}
                 >
-                  <a href="https://www.amazon.com/wedding/share/eni-korede">Registry</a>
+                  <a href="https://www.amazon.com/wedding/share/eni-korede" target="_blank" rel="noopener noreferrer">Registry</a>
                 </li>
                 <li
                   onClick={() => setSelected("rsvp")}
@@ -110,16 +106,12 @@ function App() {
           <li
             onClick={() => {
               setSelected("registry");
-              window.open(
-                "https://www.amazon.com/wedding/share/eni-korede",
-                "_blank"
-              );
             }}
             className={`${
               selected === "registry" ? "underline" : ""
             } hover:underline underline-offset-[8px]`}
           >
-            <a href="https://www.amazon.com/wedding/share/eni-korede">Registry</a>
+            <a href="https://www.amazon.com/wedding/share/eni-korede" target="_blank" rel="noopener noreferrer">Registry</a>
           </li>
           <li
             onClick={() => setSelected("rsvp")}
