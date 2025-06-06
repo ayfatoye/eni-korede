@@ -1,6 +1,6 @@
 # eni-korede
 
-Custom website for our sister's wedding, equipped with rsvp functionality.
+Custom website for our sister's wedding, equipped with rsvp functionality :)
 
 # React + TypeScript + Vite
 
