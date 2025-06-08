@@ -15,7 +15,7 @@ function Hamburger({ onClick }: { onClick?: () => void }) {
   );
 }
 
-function App() {
+function App() { 
   const [selected, setSelected] = useState<string | null>("home");
   const [menuOpen, setMenuOpen] = useState(false);
 
