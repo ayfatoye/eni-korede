@@ -52,10 +52,11 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
         <Countdown />
         <button
           onClick={onRSVPClick}
-          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2"
+          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-6 rounded-md text-3xl font-bold py-2"
         >
           RSVP
         </button>
+
 
         <button
           onClick={() => {
@@ -67,6 +68,15 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
         </button>
 
 
+
+        <div className="text-[#717769] w-3/4 mx-auto text-lg md:text-2xl font-light md:font-medium pb-6 pt-3 md:pb-12 md:pt-4">
+          <p>
+            PLEASE NOTE:
+          </p>
+          <p className="py-2">The colours of the day are <span className="font-bold">Pink</span> and <span className="font-bold">Green</span></p>
+          <p className="py-2">While we love our children, this is an <span className="font-bold">ADULTS-ONLY</span> event</p>
+          <p className="py-2">For any questions or concerns, please feel free to reach out to the Event Coordinator (832 679-4576), Abisola Oladigbo (773 964-9462), or Bolu Fatoye (832 845 0815)</p>
+        </div>
 
       </div>
     </div>

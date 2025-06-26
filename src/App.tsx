@@ -15,7 +15,7 @@ function Hamburger({ onClick }: { onClick?: () => void }) {
   );
 }
 
-function App() {
+function App() { 
   const [selected, setSelected] = useState<string | null>("home");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,7 +23,7 @@ function App() {
     <div className="relative min-h-[556px]">
       {menuOpen == true && (
         <>
-          <div className="fixed md:hidden inset-0 w-full h-full bg-gray-900 opacity-50 z-30" />
+          <div className="fixed md:hidden inset-0 w-full h-full bg-gray-900 opacity-50 z-30" onClick={() => setMenuOpen(false)}/>
           <div className="fixed md:hidden flex flex-col top-0 right-0 z-50 bg-white w-[220px] h-[100vh] px-[40px] py-[50px] opacity-100 text-left">
             <div className="border-b-1 border-black mb-4 pb-4">
               <button onClick={() => setMenuOpen(false)}>
