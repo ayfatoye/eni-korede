@@ -41,17 +41,15 @@ function App() {
               <ul className="flex flex-col h-full text-2xl justify-between">
                 <li
                   onClick={() => setSelected("home")}
-                  className={`${
-                    selected === "home" ? "underline" : ""
-                  } hover:underline underline-offset-[8px]`}
+                  className={`${selected === "home" ? "underline" : ""
+                    } hover:underline underline-offset-[8px]`}
                 >
                   <a href="#">Home</a>
                 </li>
                 <li
                   onClick={() => setSelected("schedule")}
-                  className={`${
-                    selected === "schedule" ? "underline" : ""
-                  } hover:underline underline-offset-[8px]`}
+                  className={`${selected === "schedule" ? "underline" : ""
+                    } hover:underline underline-offset-[8px]`}
                 >
                   <a href="#">Schedule</a>
                 </li>
@@ -59,17 +57,15 @@ function App() {
                   onClick={() => {
                     setSelected("registry");
                   }}
-                  className={`${
-                    selected === "registry" ? "underline" : ""
-                  } hover:underline underline-offset-[8px]`}
+                  className={`${selected === "registry" ? "underline" : ""
+                    } hover:underline underline-offset-[8px]`}
                 >
                   <a href="https://www.amazon.com/wedding/share/eni-korede" target="_blank" rel="noopener noreferrer">Registry</a>
                 </li>
                 <li
                   onClick={() => setSelected("rsvp")}
-                  className={`${
-                    selected === "rsvp" ? "underline" : ""
-                  } hover:underline underline-offset-[8px]`}
+                  className={`${selected === "rsvp" ? "underline" : ""
+                    } hover:underline underline-offset-[8px]`}
                 >
                   <a href="#">RSVP</a>
                 </li>
@@ -89,17 +85,15 @@ function App() {
         <ul className="flex flex-row list-none space-x-4 mb-2 text-[#717769] font-normal text-2xl">
           <li
             onClick={() => setSelected("home")}
-            className={`${
-              selected === "home" ? "underline" : ""
-            } hover:underline underline-offset-[8px]`}
+            className={`${selected === "home" ? "underline" : ""
+              } hover:underline underline-offset-[8px]`}
           >
             <a href="#">Home</a>
           </li>
           <li
             onClick={() => setSelected("schedule")}
-            className={`${
-              selected === "schedule" ? "underline" : ""
-            } hover:underline underline-offset-[8px]`}
+            className={`${selected === "schedule" ? "underline" : ""
+              } hover:underline underline-offset-[8px]`}
           >
             <a href="#">Schedule</a>
           </li>
@@ -107,17 +101,15 @@ function App() {
             onClick={() => {
               setSelected("registry");
             }}
-            className={`${
-              selected === "registry" ? "underline" : ""
-            } hover:underline underline-offset-[8px]`}
+            className={`${selected === "registry" ? "underline" : ""
+              } hover:underline underline-offset-[8px]`}
           >
             <a href="https://www.amazon.com/wedding/share/eni-korede" target="_blank" rel="noopener noreferrer">Registry</a>
           </li>
           <li
             onClick={() => setSelected("rsvp")}
-            className={`${
-              selected === "rsvp" ? "underline" : ""
-            } hover:underline underline-offset-[8px]`}
+            className={`${selected === "rsvp" ? "underline" : ""
+              } hover:underline underline-offset-[8px]`}
           >
             <a href="#">RSVP</a>
           </li>
@@ -125,7 +117,9 @@ function App() {
       </div>
       <div className="flex justify-center">
         {selected === "home" && (
-          <Home onRSVPClick={() => setSelected("rsvp")} />
+          <Home
+            onRSVPClick={() => setSelected("rsvp")}
+            onRegistryClick={() => setSelected("registry")} /> //change made here
         )}
         {selected === "rsvp" && <RSVP />}
         {selected === "registry" && (
