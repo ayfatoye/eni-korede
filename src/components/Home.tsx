@@ -30,7 +30,7 @@ function CenterPageNames() {
   );
 }
 
-function Home({ onRSVPClick, onRegistryClick }: { onRSVPClick: () => void; onRegistryClick: () => void; }) {
+function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
   return (
     <div className="w-screen">
       <img
@@ -58,8 +58,10 @@ function Home({ onRSVPClick, onRegistryClick }: { onRSVPClick: () => void; onReg
         </button>
 
         <button
-          onClick={onRegistryClick}
-          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2"
+          onClick={() => {
+            window.open("https://www.amazon.com/wedding/share/eni-korede", "_blank");
+          }}
+          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2"
         >
           Registry
         </button>
