@@ -30,7 +30,7 @@ function CenterPageNames() {
   );
 }
 
-function Home({ onRSVPClick }: { onRSVPClick: () => void }) {
+function Home({ onRSVPClick, onRegistryClick }: { onRSVPClick: () => void; onRegistryClick: () => void; }) {
   return (
     <div className="w-screen">
       <img
@@ -56,7 +56,16 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void }) {
         >
           RSVP
         </button>
-        
+
+        <button
+          onClick={onRegistryClick}
+          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2"
+        >
+          Registry
+        </button>
+
+
+
       </div>
     </div>
   );
