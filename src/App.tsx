@@ -118,8 +118,7 @@ function App() {
       <div className="flex justify-center">
         {selected === "home" && (
           <Home
-            onRSVPClick={() => setSelected("rsvp")}
-            onRegistryClick={() => setSelected("registry")} /> //change made here
+            onRSVPClick={() => setSelected("rsvp")} />
         )}
         {selected === "rsvp" && <RSVP />}
         {selected === "registry" && (
