@@ -52,7 +52,7 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
         <Countdown />
         <button
           onClick={onRSVPClick}
-          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-6 rounded-md text-3xl font-bold py-2"
+          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-1 rounded-md text-3xl font-bold py-2 pr-1"
         >
           RSVP
         </button>
@@ -62,7 +62,7 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
           onClick={() => {
             window.open("https://www.amazon.com/wedding/share/eni-korede", "_blank");
           }}
-          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2"
+          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2 pl-1"
         >
           Registry
         </button>
@@ -71,11 +71,11 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
 
         <div className="text-[#717769] w-3/4 mx-auto text-lg md:text-2xl font-light md:font-medium pb-6 pt-3 md:pb-12 md:pt-4">
           <p>
-            PLEASE NOTE:
+            PLEASE NOTE: {/*pink color hexcode: FAC1C2 or FDBFC1. Green: A19451 */}
           </p>
-          <p className="py-2">The colours of the day are <span className="font-bold">Pink</span> and <span className="font-bold">Green</span></p>
-          <p className="py-2">While we love our children, this is an <span className="font-bold">ADULTS-ONLY</span> event</p>
-          <p className="py-2">For any questions or concerns, please feel free to reach out to the Event Coordinator (832 679-4576), Abisola Oladigbo (773 964-9462), or Bolu Fatoye (832 845 0815)</p>
+          <p className="py-2">The colours of the day are <span className="font-bold text-[#f8c3ec]">PINK</span> and <span className="font-bold text-[#b6d7a8]">GREEN</span></p>
+          <p className="py-2">While we love our children, this is an <span className="font-bold text-[#ff0000]">ADULTS-ONLY</span> event</p>
+          <p className="py-2">Have questions? Feel free to reach out to Event Coordinators Yippee Celebrations (832 679-4576), or Abisola Oladigbo (773 964-9462) and Bolu Fatoye (832 845 0815). We're happy to help!</p>
         </div>
 
       </div>
