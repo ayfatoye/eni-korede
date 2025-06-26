@@ -52,7 +52,7 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
         <Countdown />
         <button
           onClick={onRSVPClick}
-          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] my-6 mb-1 rounded-md text-3xl font-bold py-2 pr-1"
+          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] mx-5 my-6 mb-1 rounded-md text-3xl font-bold py-2 pr-1"
         >
           RSVP
         </button>
@@ -62,7 +62,7 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
           onClick={() => {
             window.open("https://www.amazon.com/wedding/share/eni-korede", "_blank");
           }}
-          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black w-[250px] my-6 mb-10 rounded-md text-3xl font-bold py-2 pl-1"
+          className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black w-[250px] mx-5 my-6 mb-10 rounded-md text-3xl font-bold py-2 pl-1"
         >
           Registry
         </button>
