@@ -75,7 +75,7 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
           </p>
           <p className="py-2">The colours of the day are <span className="font-bold text-[#f8c3ec]">PINK</span> and <span className="font-bold text-[#b6d7a8]">GREEN</span></p>
           <p className="py-2">While we love our children, this is an <span className="font-bold text-[#ff0000]">ADULTS-ONLY</span> event</p>
-          <p className="py-2">Have questions? Feel free to reach out to Event Coordinators Yippee Celebrations (832 679-4576),  Abisola Oladigbo (773 964-9462) or Bolu Fatoye (832 845 0815). We're happy to help!</p>
+          <p className="py-2">Have questions? Feel free to reach out to Abisola Oladigbo (773 964-9462) and Bolu Fatoye (832 845 0815). We're happy to help!</p>
         </div>
 
       </div>
