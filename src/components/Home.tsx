@@ -60,7 +60,7 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
 
         <button
           onClick={() => {
-            window.open("https://www.amazon.com/wedding/share/eni-korede", "_blank");
+            window.open("https://www.amazon.com/wedding/share/eni-korede", "_blank", "noopener noreferrer");
           }}
           className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black w-[250px] mx-5 my-6 mb-10 rounded-md text-3xl font-bold py-2 pl-1"
         >
