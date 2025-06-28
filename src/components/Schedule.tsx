@@ -40,7 +40,7 @@ function Schedule() {
               RECEPTION
             </p>
             <p className="text-[#717769] text-2xl md:text-4xl font-medium">
-              07:00 pm - 11:00 pm
+              06:00 pm - 11:00 pm
             </p>
           </div>
           <div className="mt-12 mb-10">
