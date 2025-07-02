@@ -22,11 +22,18 @@ function RSVP() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     // console.log("WHAT THE FUCK!!")
     e.preventDefault();
-    const { name, email, attending, phoneNumber, phoneProvider, countryCode, invitorName } =
-      formData;
+    const {
+      name,
+      email,
+      attending,
+      phoneNumber,
+      phoneProvider,
+      countryCode,
+      invitorName,
+    } = formData;
 
     if (attending) {
       if (
@@ -52,18 +59,18 @@ function RSVP() {
         alert("Please format email field correctly.");
         return;
       }
-
-    }
-    else{
-      if(!name.trim()){
+    } else {
+      if (!name.trim()) {
         alert("Please include your full name");
         return;
       }
     }
-    
+
     // console.log("oh, what fucking now");
+    setLoading(true);
+    // console.log("should be loading now..");
     try {
-      axios
+      await axios
         .post("https://eni-korede.vercel.app/api/rsvp", formData, {
           headers: {
             "Content-Type": "application/json",
@@ -75,6 +82,11 @@ function RSVP() {
         });
     } catch (error) {
       console.error("Error submitting RSVP:", error);
+      alert(
+        "Something went wrong. Please try again or reach out to a number on the Home Page."
+      );
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -88,8 +100,21 @@ function RSVP() {
     invitorName: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   return (
     <div className="w-full flex flex-col items-center justify-center">
+      {loading && (
+        <div className="fixed inset-0 z-30 flex items-center justify-center">
+          
+          <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
+
+          <div className="relative w-[200px] h-[200px] bg-white text-black text-2xl flex items-center justify-center rounded-md shadow-md z-40">
+            Loading...
+          </div>
+        </div>
+      )}
+
       <div className="flex justify-center items-center mt-[75px] max-h-[325px]:mt-[120px] md:mt-8 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] text-[#717769]">
         <img
           src="/eni-kore-3.jpeg"
