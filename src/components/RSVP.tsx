@@ -110,7 +110,7 @@ function RSVP() {
           <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
 
           <div className="relative w-[200px] h-[200px] bg-white text-black text-2xl flex items-center justify-center rounded-md shadow-md z-40">
-            Loading...
+            Submitting...
           </div>
         </div>
       )}
