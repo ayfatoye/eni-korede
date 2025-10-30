@@ -50,12 +50,12 @@ function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
           Houston, TX
         </p>
         <Countdown />
-        <button
+        {/* <button
           onClick={onRSVPClick}
           className="appearance-none bg-[#717769] hover:bg-[#44473F] active:bg-[#44473F] text-black min-w- w-[250px] mx-5 my-6 mb-1 rounded-md text-3xl font-bold py-2 pr-1"
         >
           RSVP
-        </button>
+        </button> */}
 
 
         <button

@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./components/Home";
-import RSVP from "./components/RSVP";
+// import RSVP from "./components/RSVP";
 import { useState } from "react";
 import Schedule from "./components/Schedule";
 
@@ -62,13 +62,13 @@ function App() {
                 >
                   <a href="https://www.amazon.com/wedding/share/eni-korede" target="_blank" rel="noopener noreferrer">Registry</a>
                 </li>
-                <li
+                {/* <li
                   onClick={() => setSelected("rsvp")}
                   className={`${selected === "rsvp" ? "underline" : ""
                     } hover:underline underline-offset-[8px]`}
                 >
                   <a href="#">RSVP</a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -106,13 +106,13 @@ function App() {
           >
             <a href="https://www.amazon.com/wedding/share/eni-korede" target="_blank" rel="noopener noreferrer">Registry</a>
           </li>
-          <li
+          {/* <li
             onClick={() => setSelected("rsvp")}
             className={`${selected === "rsvp" ? "underline" : ""
               } hover:underline underline-offset-[8px]`}
           >
             <a href="#">RSVP</a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="flex justify-center">
@@ -120,7 +120,7 @@ function App() {
           <Home
             onRSVPClick={() => setSelected("rsvp")} />
         )}
-        {selected === "rsvp" && <RSVP />}
+        {/* {selected === "rsvp" && <RSVP />} */}
         {selected === "registry" && (
           <div className="flex flex-col items-center justify-center h-[85vh] md:h-[60vh]">
             <p className="text-[#717769] text-lg md:text-2xl font-light md:font-medium">
