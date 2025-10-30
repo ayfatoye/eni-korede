@@ -76,7 +76,7 @@ function Home() {
           </p>
           <p className="py-2">The colours of the day are <span className="font-bold text-[#f8c3ec]">PINK</span> and <span className="font-bold text-[#b6d7a8]">GREEN</span></p>
           <p className="py-2">While we love our children, this is an <span className="font-bold text-[#ff0000]">ADULTS-ONLY</span> event</p>
-          <p className="py-2">To confirm your RSVP status, please check your email for a message titled "A message for our wedding guests" from "Eniola Fatoye & Akorede Oladigbo" at "weddings@zola.com". Additionally, you can check your phone messages for confirmation from "+1 917 695-8058".</p>
+          <p className="py-2">To confirm your RSVP status, please check your email for a message titled "A message for our wedding guests" from "Eniola Fatoye & Akorede Oladigbo" at "weddings@zola.com". Additionally, you can check your phone messages for confirmation from "+1 917 695-8058"</p>
           <p className="py-2">Have questions? Feel free to reach out to Abisola Oladigbo (773 964-9462) and Bolu Fatoye (832 845 0815). We're happy to help!</p>
         </div>
 
