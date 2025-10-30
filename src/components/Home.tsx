@@ -30,7 +30,8 @@ function CenterPageNames() {
   );
 }
 
-function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
+// function Home({ onRSVPClick }: { onRSVPClick: () => void; }) {
+function Home() {
   return (
     <div className="w-screen">
       <img
