@@ -1,8 +1,9 @@
 import "./App.css";
 import Home from "./components/Home";
 // import RSVP from "./components/RSVP";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Schedule from "./components/Schedule";
+import CheckIn from "./components/CheckIn";
 
 function Hamburger({ onClick }: { onClick?: () => void }) {
   return (
@@ -18,6 +19,46 @@ function Hamburger({ onClick }: { onClick?: () => void }) {
 function App() {
   const [selected, setSelected] = useState<string | null>("home");
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // map pathname to selected key
+  const pathToSelected = (p: string | null) => {
+    if (!p) return "home";
+    const path = p.replace(/\/$/, ""); // strip trailing slash
+    switch (path.toLowerCase()) {
+      case "":
+      case "/":
+      case "/home":
+        return "home";
+      case "/schedule":
+        return "schedule";
+      case "/check-in":
+      case "/checkin":
+        return "check-in";
+      case "/registry":
+        return "registry";
+      default:
+        return "home";
+    }
+  };
+
+  // navigate without full page reload and keep URL in sync
+  const navigateTo = (key: string, url: string) => {
+    setSelected(key);
+    try {
+      window.history.pushState({}, "", url);
+    } catch (e) {
+      // fallback: full navigation
+      window.location.href = url;
+    }
+  };
+
+  // initialize selected from current URL and handle back/forward
+  useEffect(() => {
+    setSelected(pathToSelected(window.location.pathname));
+    const onPop = () => setSelected(pathToSelected(window.location.pathname));
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
 
   return (
     <div className="relative min-h-[556px]">
@@ -40,23 +81,26 @@ function App() {
             <div className="flex flex-col h-[240px] justify-between text-black text-center">
               <ul className="flex flex-col h-full text-2xl justify-between">
                 <li
-                  onClick={() => setSelected("home")}
+                  // onClick={() => setSelected("home")}
+                  onClick={() => navigateTo("home", "/home")}
                   className={`${selected === "home" ? "underline" : ""
                     } hover:underline underline-offset-[8px]`}
                 >
                   <a href="#">Home</a>
                 </li>
                 <li
-                  onClick={() => setSelected("schedule")}
+                  // onClick={() => setSelected("schedule")}
+                  onClick={() => navigateTo("schedule", "/schedule")}
                   className={`${selected === "schedule" ? "underline" : ""
                     } hover:underline underline-offset-[8px]`}
                 >
                   <a href="#">Schedule</a>
                 </li>
                 <li
-                  onClick={() => {
-                    setSelected("registry");
-                  }}
+                  // onClick={() => {
+                  //   setSelected("registry");
+                  // }}
+                  onClick={() => navigateTo("registry", "/registry")}
                   className={`${selected === "registry" ? "underline" : ""
                     } hover:underline underline-offset-[8px]`}
                 >
@@ -69,6 +113,14 @@ function App() {
                 >
                   <a href="#">RSVP</a>
                 </li> */}
+                <li
+                  // onClick={() => setSelected("check-in")}
+                  onClick={() => navigateTo("check-in", "/check-in")}
+                  className={`${selected === "check-in" ? "underline" : ""
+                    } hover:underline underline-offset-[8px]`}
+                >
+                  <a href="#">Check In</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -82,25 +134,28 @@ function App() {
           ENIOLA & AKOREDE
         </h3>
 
-        <ul className="flex flex-row list-none space-x-4 mb-2 text-[#717769] font-normal text-2xl">
+          <ul className="flex flex-row list-none space-x-4 mb-2 text-[#717769] font-normal text-2xl">
           <li
-            onClick={() => setSelected("home")}
+            // onClick={() => setSelected("home")}
+            onClick={() => navigateTo("home", "/home")}
             className={`${selected === "home" ? "underline" : ""
               } hover:underline underline-offset-[8px]`}
           >
-            <a href="#">Home</a>
+            <a href="/" onClick={(e) => e.preventDefault()}>Home</a>
           </li>
           <li
-            onClick={() => setSelected("schedule")}
+            // onClick={() => setSelected("schedule")}
+            onClick={() => navigateTo("schedule", "/schedule")}
             className={`${selected === "schedule" ? "underline" : ""
               } hover:underline underline-offset-[8px]`}
           >
-            <a href="#">Schedule</a>
+            <a href="/schedule" onClick={(e) => e.preventDefault()}>Schedule</a>
           </li>
           <li
-            onClick={() => {
-              setSelected("registry");
-            }}
+            // onClick={() => {
+            //   setSelected("registry");
+            // }}
+            onClick={() => navigateTo("registry", "/registry")}
             className={`${selected === "registry" ? "underline" : ""
               } hover:underline underline-offset-[8px]`}
           >
@@ -111,8 +166,15 @@ function App() {
             className={`${selected === "rsvp" ? "underline" : ""
               } hover:underline underline-offset-[8px]`}
           >
-            <a href="#">RSVP</a>
+            <a href="#">RSVP</a>e
           </li> */}
+          <li
+            onClick={() => navigateTo("check-in", "/check-in")}
+            className={`${selected === "check-in" ? "underline" : ""
+              } hover:underline underline-offset-[8px]`}
+          >
+            <a href="/check-in" onClick={(e) => e.preventDefault()}>Check In</a>
+          </li>
         </ul>
       </div>
       <div className="flex justify-center">
@@ -122,6 +184,7 @@ function App() {
           <Home />
         )}
         {/* {selected === "rsvp" && <RSVP />} */}
+        {selected === "check-in" && <CheckIn />}
         {selected === "registry" && (
           <div className="flex flex-col items-center justify-center h-[85vh] md:h-[60vh]">
             <p className="text-[#717769] text-lg md:text-2xl font-light md:font-medium">
