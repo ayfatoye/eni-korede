@@ -4,7 +4,7 @@ import seatChartData from "./seatChart.json";
 interface Guest {
   fName: string;
   lName: string;
-  phoneNumber: string;
+  // phoneNumber: string;
   seatNumber: string;
 }
 
@@ -16,8 +16,8 @@ const seatChart = seatChartData as Guest[];
 type formData = {
   fName: string;
   lName: string;
-  phoneNumber: string; // should only be 10 digits, e.g: 8328450811 or 8162548259
-  countryCode: string; // e.g: +1 for US, +234 for Nigeria
+  // phoneNumber: string; // should only be 10 digits, e.g: 8328450811 or 8162548259
+  // countryCode: string; // e.g: +1 for US, +234 for Nigeria
 };
 
 function CheckIn() {
@@ -37,25 +37,25 @@ function CheckIn() {
     const {
       fName,
       lName,
-      phoneNumber,
-      countryCode,
+      // phoneNumber,
+      // countryCode,
     } = formData;
 
     if (
       !fName.trim() ||
-      !lName.trim() ||
-      !phoneNumber.trim() ||
-      !countryCode.trim()
+      !lName.trim() 
+      // !phoneNumber.trim() ||
+      // !countryCode.trim()
     ) {
       alert("Please fill all fields.");
       return;
     }
 
-    const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(phoneNumber)) {
-      alert("Please enter 10 digits. For NGA numbers, use 8162548259 instead of 08162548259, for example.");
-      return;
-    }
+    // const phoneRegex = /^\d{10}$/;
+    // if (!phoneRegex.test(phoneNumber)) {
+    //   alert("Please enter 10 digits. For NGA numbers, use 8162548259 instead of 08162548259, for example.");
+    //   return;
+    // }
 
     const match = seatChart.find((g) =>
       g.fName.trim().toLowerCase() === fName.trim().toLowerCase() &&
@@ -75,8 +75,8 @@ function CheckIn() {
   const [formData, setFormData] = useState<formData>({
     lName: "",
     fName: "",
-    phoneNumber: "",
-    countryCode: "+1"
+    // phoneNumber: "",
+    // countryCode: "+1"
   });
 
   // const [loading, setLoading] = useState(false);
@@ -126,7 +126,7 @@ function CheckIn() {
               className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 my-2"
             />
 
-            <div className="flex gap-2 items-center my-2">
+            {/* <div className="flex gap-2 items-center my-2">
               <select
                 name="countryCode"
                 value={formData.countryCode}
@@ -145,7 +145,7 @@ function CheckIn() {
                 onChange={handleChange}
                 className="pl-2 font-bold placeholder:font-semibold border bg-white py-2 flex-1 my-2"
               />
-            </div>
+            </div> */}
 
             <div>
               <button
