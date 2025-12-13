@@ -1,3 +1,4 @@
+guestsJsonArray:
 [
     {
         "fName": "Foluso",
@@ -1340,3 +1341,44 @@
         "seatNumber": "31"
     }
 ]
+
+ineligibleNamesArray:
+[
+    "Ajagbe",
+    "Oladigbo",
+    "Oladigbo",
+    "Akinyele",
+    "Akinyele",
+    "Fatoye",
+    "Fatoye",
+    "Fayehun",
+    "Olayiwola",
+    "Olayiwola",
+    "Kuku",
+    "Morenikeji",
+    "Arinze",
+    "Tonye",
+    "Mansoog",
+    "Chigozirim",
+    "Adurayemi",
+    "Stephen",
+    "Portia",
+    "Precious",
+    "Akinyemi",
+    "Ehwariemes",
+    "Ishola-Gbeale",
+    "Ishola-Gbeale",
+    "Bolatito",
+    "Asalu",
+    "Onabolu",
+    "Enonbun",
+    "Ishola-Ponle",
+    "Olaniran",
+    "Sunkanmi",
+    "Nolan",
+    "Irene",
+    "Irene"
+]
+
+ineligibleNamesCounter:
+34
