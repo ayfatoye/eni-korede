@@ -63,7 +63,7 @@ function CheckIn() {
     );
 
     if (match) {
-      alert(`Hi, ${fName} ${lName}! Your seat number is ${match.seatNumber}`);
+      alert(`Hi, ${fName} ${lName}! Your table number is ${match.seatNumber}`);
       return;
     }
 
