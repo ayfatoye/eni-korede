@@ -63,7 +63,7 @@ function CheckIn() {
     );
 
     if (match) {
-      alert(`Season Greetings, ${fName} ${lName}! Your table number is ${match.seatNumber}. It's also the bride's birthday, don't forget to wish her :)`);
+      alert(`Season Greetings, ${fName} ${lName}! Your table number is ${match.seatNumber} :)`);
       return;
     }
 
@@ -104,7 +104,7 @@ function CheckIn() {
 
       <div className="flex flex-col rounded-2xl mt-[25px] max-h-[325px]:mt-[120px] md:mt-0 mb-[35px] min-w-[320px] w-[90vw] md:w-[736px] py-8 px-4 text-[#717769] bg-[#71776914]">
         <p className="">
-          Please fill out the form below to check in and receive your seat number for the wedding.
+          Please fill out the form below to check in and receive your seat number for the wedding. <br></br> It's also the bride's birthday, don't forget to wish her :)
         </p>
 
         <div>
