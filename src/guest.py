@@ -14,16 +14,15 @@ Akinyele
 Akinyele 
 
 Table 2 (Bride Family High Table) 
-Sunday Alaketu 
+Sunday Alaketu
+Sunday Ibitoye 
 Femi Ojikutu 
 Olubunmi Akindele
-Saliu Olaniran 
 Princess Adewunmi
 Rotimi Asaolu  
 Tolulope Aina 
-Dagogo Pollyn
-Fatoye
-Fatoye
+Akinsola Fatoye
+Kofoworola Fatoye
 
 Table 3 Groom men 
 Folajimi Solarin 
@@ -128,8 +127,6 @@ Lilian Koguingar
 Lilian’s Koguingar
 
 Table 11 (Jesus House Friends) 11
-Olateju Adesida 
-Ibukun Adeosun
 Nosi Ogundiran
 Seun Ogundiran 
 Idowu Dami 
@@ -140,6 +137,8 @@ Ayomide Oluewulo
 Wale Adeniruju 
 Bimbo Adeniruju
 Isaac Adeniruju
+Sammi
+David Adebowale
 
 Table 12 (Bride Mum Friends) 
 Abbey Adenrele 
@@ -154,15 +153,15 @@ Abiodun Ilesanmi
 Nike Oyelakin 
 
 Table 13 (Amazon Friends)
-Precious Amazon  
+Precious 
 Idera Adenekan
 Nike Adewale
 Density Ugwu 
 Arinze
-Elder Tonye 
-Tonye 
-Mary Tonye 
-Taiwo Ayorinde 
+Elder Tonye
+Tonye
+Mary Tonye
+Taiwo Ayorinde
 Genet Woldu 
 
 Table 14 (Bride Family)
@@ -170,6 +169,7 @@ Jide Sowunmi
 Karimot Sanyaolu 
 Mansoog
 Muis Adenrele 
+Tajudeen Isola-Gbenla
 TJ Isola-Gbenla
 Nosa Idemuda 
 Abi Isola-Gbenla 
@@ -192,13 +192,13 @@ Table 16 (Couple Friends)
 Pearl Nwokeke
 Prince Nwokeke
 Mimi Onyekuru 
-Chigozirim 
+Chigozirim Wellington
 Oyin Popoola
 Naomi Dada 
-Naki Ijalana 
-James Ijalana
 Ayo Emmanuel 
 Ore Ladoja
+Girlsehense Tabi
+Tamara Fiemotongha
 
 Table 17 (Amazon Friends)
 Fahima Haider 
@@ -208,8 +208,7 @@ Shade Abraham
 Nuru Opeloyeru 
 Yunus Ahmodu 
 Shola Eninle
-Andrew Iriabe 
-Taiwo Ayorinde
+Andrew Iriabe
 
 Table 18 (Bride Family)
 Abby Fabs 
@@ -218,13 +217,13 @@ Kazeem Odesola
 Dara Odesola
 Faheer Odesola
 Ayo Odesola 
-Adurayemi
+Adurayemi Osuntokun
 Ope Nurudeen
 Charity Legging
 Wakui Fakoya
 
 Table 19 (NLC Church Group)
-Stephen 
+Stephen
 Portia
 Mena Enahowo 
 Emmanuel Enahowo
@@ -233,7 +232,7 @@ Rona Enahowo
 Oro Enahowo 
 Sepiribo Young-Harry 
 Jite Young-Harry
-Florence Ogbon. 
+Florence Ogbon 
 
 
 Table 20 (Bride Family) 
@@ -249,10 +248,11 @@ Omosebi Sunday
 
 Table 21 (NLC Church Group) 
 OJ Oluokoro
+OJ Olu-okoro
 Precious
 Bayo Akinyemi
 Akinyemi
-Ehwariemes 
+Austin Ehwariemes 
 Divine Ehwariemes 
 Ochuko Ehwariemes 
 Praise Ehwariemes
@@ -300,12 +300,11 @@ Bolaji Ola
 Olumide Asalu 
 Asalu 
 Judith Ogbodu
-Abisoye Onabolu 
-Onabolu 
+Abisoye Ogundipe 
+Jonathan Ogundipe
 Linda Iyare
 Abisoye Adekoya 
 Olugbenga Adekoya
-Olajumoke Ajibola 
 
 Table 26 (Bride Family)
 Enonbun 
@@ -337,15 +336,13 @@ Hafsa Mtumbei
 Oyenike Oyelakin
 Beatrice Adepoju
 Busola Adepoju
-Bukola Ilawole
+Oreoluwa Ladoja
 
 Table 29 ( Bride Family)
 Lanre Keshinro
 TJ Ishola-Ponle 
 Ishola-Ponle 
-Abisoye Ogundipe 
 ADEYINKA OLATUNJI
-Jonathan Ogundipe 
 Esther Olaode 
 
 Table 30 (Bride Family )
@@ -355,12 +352,10 @@ Dammy Ilori
 Bankole Obasanmi
 Bunmi Aina
 Yunus Kareem 
-Olaniran 
 Sunkanmi
 Farhia Huussein
 
 Table 31 (Bride Family) 
-Linda Iyare
 Santanna Norwood 
 Mercedes Mustapha 
 Nolan

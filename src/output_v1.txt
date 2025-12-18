@@ -31,11 +31,6 @@ guestsJsonArray:
         "seatNumber": "2"
     },
     {
-        "fName": "Sunday",
-        "lName": "Ibitoye",
-        "seatNumber": "2"
-    },
-    {
         "fName": "Femi",
         "lName": "Ojikutu",
         "seatNumber": "2"
@@ -43,6 +38,11 @@ guestsJsonArray:
     {
         "fName": "Olubunmi",
         "lName": "Akindele",
+        "seatNumber": "2"
+    },
+    {
+        "fName": "Saliu",
+        "lName": "Olaniran",
         "seatNumber": "2"
     },
     {
@@ -61,13 +61,8 @@ guestsJsonArray:
         "seatNumber": "2"
     },
     {
-        "fName": "Akinsola",
-        "lName": "Fatoye",
-        "seatNumber": "2"
-    },
-    {
-        "fName": "Kofoworola",
-        "lName": "Fatoye",
+        "fName": "Dagogo",
+        "lName": "Pollyn",
         "seatNumber": "2"
     },
     {
@@ -466,6 +461,16 @@ guestsJsonArray:
         "seatNumber": "10"
     },
     {
+        "fName": "Olateju",
+        "lName": "Adesida",
+        "seatNumber": "11"
+    },
+    {
+        "fName": "Ibukun",
+        "lName": "Adeosun",
+        "seatNumber": "11"
+    },
+    {
         "fName": "Nosi",
         "lName": "Ogundiran",
         "seatNumber": "11"
@@ -513,11 +518,6 @@ guestsJsonArray:
     {
         "fName": "Isaac",
         "lName": "Adeniruju",
-        "seatNumber": "11"
-    },
-    {
-        "fName": "David",
-        "lName": "Adebowale",
         "seatNumber": "11"
     },
     {
@@ -571,6 +571,11 @@ guestsJsonArray:
         "seatNumber": "12"
     },
     {
+        "fName": "Precious",
+        "lName": "Amazon",
+        "seatNumber": "13"
+    },
+    {
         "fName": "Idera",
         "lName": "Adenekan",
         "seatNumber": "13"
@@ -618,11 +623,6 @@ guestsJsonArray:
     {
         "fName": "Muis",
         "lName": "Adenrele",
-        "seatNumber": "14"
-    },
-    {
-        "fName": "Tajudeen",
-        "lName": "Isola-Gbenla",
         "seatNumber": "14"
     },
     {
@@ -716,11 +716,6 @@ guestsJsonArray:
         "seatNumber": "16"
     },
     {
-        "fName": "Chigozirim",
-        "lName": "Wellington",
-        "seatNumber": "16"
-    },
-    {
         "fName": "Oyin",
         "lName": "Popoola",
         "seatNumber": "16"
@@ -731,6 +726,16 @@ guestsJsonArray:
         "seatNumber": "16"
     },
     {
+        "fName": "Naki",
+        "lName": "Ijalana",
+        "seatNumber": "16"
+    },
+    {
+        "fName": "James",
+        "lName": "Ijalana",
+        "seatNumber": "16"
+    },
+    {
         "fName": "Ayo",
         "lName": "Emmanuel",
         "seatNumber": "16"
@@ -738,16 +743,6 @@ guestsJsonArray:
     {
         "fName": "Ore",
         "lName": "Ladoja",
-        "seatNumber": "16"
-    },
-    {
-        "fName": "Girlsehense",
-        "lName": "Tabi",
-        "seatNumber": "16"
-    },
-    {
-        "fName": "Tamara",
-        "lName": "Fiemotongha",
         "seatNumber": "16"
     },
     {
@@ -791,6 +786,11 @@ guestsJsonArray:
         "seatNumber": "17"
     },
     {
+        "fName": "Taiwo",
+        "lName": "Ayorinde",
+        "seatNumber": "17"
+    },
+    {
         "fName": "Abby",
         "lName": "Fabs",
         "seatNumber": "18"
@@ -818,11 +818,6 @@ guestsJsonArray:
     {
         "fName": "Ayo",
         "lName": "Odesola",
-        "seatNumber": "18"
-    },
-    {
-        "fName": "Adurayemi",
-        "lName": "Osuntokun",
         "seatNumber": "18"
     },
     {
@@ -877,7 +872,7 @@ guestsJsonArray:
     },
     {
         "fName": "Florence",
-        "lName": "Ogbon",
+        "lName": "Ogbon.",
         "seatNumber": "19"
     },
     {
@@ -931,18 +926,8 @@ guestsJsonArray:
         "seatNumber": "21"
     },
     {
-        "fName": "OJ",
-        "lName": "Olu-okoro",
-        "seatNumber": "21"
-    },
-    {
         "fName": "Bayo",
         "lName": "Akinyemi",
-        "seatNumber": "21"
-    },
-    {
-        "fName": "Austin",
-        "lName": "Ehwariemes",
         "seatNumber": "21"
     },
     {
@@ -1122,12 +1107,7 @@ guestsJsonArray:
     },
     {
         "fName": "Abisoye",
-        "lName": "Ogundipe",
-        "seatNumber": "25"
-    },
-    {
-        "fName": "Jonathan",
-        "lName": "Ogundipe",
+        "lName": "Onabolu",
         "seatNumber": "25"
     },
     {
@@ -1143,6 +1123,11 @@ guestsJsonArray:
     {
         "fName": "Olugbenga",
         "lName": "Adekoya",
+        "seatNumber": "25"
+    },
+    {
+        "fName": "Olajumoke",
+        "lName": "Ajibola",
         "seatNumber": "25"
     },
     {
@@ -1266,8 +1251,8 @@ guestsJsonArray:
         "seatNumber": "28"
     },
     {
-        "fName": "Oreoluwa",
-        "lName": "Ladoja",
+        "fName": "Bukola",
+        "lName": "Ilawole",
         "seatNumber": "28"
     },
     {
@@ -1281,8 +1266,18 @@ guestsJsonArray:
         "seatNumber": "29"
     },
     {
+        "fName": "Abisoye",
+        "lName": "Ogundipe",
+        "seatNumber": "29"
+    },
+    {
         "fName": "ADEYINKA",
         "lName": "OLATUNJI",
+        "seatNumber": "29"
+    },
+    {
+        "fName": "Jonathan",
+        "lName": "Ogundipe",
         "seatNumber": "29"
     },
     {
@@ -1326,6 +1321,11 @@ guestsJsonArray:
         "seatNumber": "30"
     },
     {
+        "fName": "Linda",
+        "lName": "Iyare",
+        "seatNumber": "31"
+    },
+    {
         "fName": "Santanna",
         "lName": "Norwood",
         "seatNumber": "31"
@@ -1349,26 +1349,31 @@ ineligibleNamesArray:
     "Oladigbo",
     "Akinyele",
     "Akinyele",
+    "Fatoye",
+    "Fatoye",
     "Fayehun",
     "Olayiwola",
     "Olayiwola",
     "Kuku",
     "Morenikeji",
-    "Sammi",
-    "Precious",
     "Arinze",
     "Tonye",
     "Mansoog",
+    "Chigozirim",
+    "Adurayemi",
     "Stephen",
     "Portia",
     "Precious",
     "Akinyemi",
+    "Ehwariemes",
     "Ishola-Gbeale",
     "Ishola-Gbeale",
     "Bolatito",
     "Asalu",
+    "Onabolu",
     "Enonbun",
     "Ishola-Ponle",
+    "Olaniran",
     "Sunkanmi",
     "Nolan",
     "Irene",
@@ -1376,4 +1381,4 @@ ineligibleNamesArray:
 ]
 
 ineligibleNamesCounter:
-29
+34

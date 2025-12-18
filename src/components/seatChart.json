@@ -30,6 +30,11 @@
         "seatNumber": "2"
     },
     {
+        "fName": "Sunday",
+        "lName": "Ibitoye",
+        "seatNumber": "2"
+    },
+    {
         "fName": "Femi",
         "lName": "Ojikutu",
         "seatNumber": "2"
@@ -37,11 +42,6 @@
     {
         "fName": "Olubunmi",
         "lName": "Akindele",
-        "seatNumber": "2"
-    },
-    {
-        "fName": "Saliu",
-        "lName": "Olaniran",
         "seatNumber": "2"
     },
     {
@@ -60,8 +60,13 @@
         "seatNumber": "2"
     },
     {
-        "fName": "Dagogo",
-        "lName": "Pollyn",
+        "fName": "Akinsola",
+        "lName": "Fatoye",
+        "seatNumber": "2"
+    },
+    {
+        "fName": "Kofoworola",
+        "lName": "Fatoye",
         "seatNumber": "2"
     },
     {
@@ -460,16 +465,6 @@
         "seatNumber": "10"
     },
     {
-        "fName": "Olateju",
-        "lName": "Adesida",
-        "seatNumber": "11"
-    },
-    {
-        "fName": "Ibukun",
-        "lName": "Adeosun",
-        "seatNumber": "11"
-    },
-    {
         "fName": "Nosi",
         "lName": "Ogundiran",
         "seatNumber": "11"
@@ -517,6 +512,11 @@
     {
         "fName": "Isaac",
         "lName": "Adeniruju",
+        "seatNumber": "11"
+    },
+    {
+        "fName": "David",
+        "lName": "Adebowale",
         "seatNumber": "11"
     },
     {
@@ -570,11 +570,6 @@
         "seatNumber": "12"
     },
     {
-        "fName": "Precious",
-        "lName": "Amazon",
-        "seatNumber": "13"
-    },
-    {
         "fName": "Idera",
         "lName": "Adenekan",
         "seatNumber": "13"
@@ -622,6 +617,11 @@
     {
         "fName": "Muis",
         "lName": "Adenrele",
+        "seatNumber": "14"
+    },
+    {
+        "fName": "Tajudeen",
+        "lName": "Isola-Gbenla",
         "seatNumber": "14"
     },
     {
@@ -715,6 +715,11 @@
         "seatNumber": "16"
     },
     {
+        "fName": "Chigozirim",
+        "lName": "Wellington",
+        "seatNumber": "16"
+    },
+    {
         "fName": "Oyin",
         "lName": "Popoola",
         "seatNumber": "16"
@@ -725,16 +730,6 @@
         "seatNumber": "16"
     },
     {
-        "fName": "Naki",
-        "lName": "Ijalana",
-        "seatNumber": "16"
-    },
-    {
-        "fName": "James",
-        "lName": "Ijalana",
-        "seatNumber": "16"
-    },
-    {
         "fName": "Ayo",
         "lName": "Emmanuel",
         "seatNumber": "16"
@@ -742,6 +737,16 @@
     {
         "fName": "Ore",
         "lName": "Ladoja",
+        "seatNumber": "16"
+    },
+    {
+        "fName": "Girlsehense",
+        "lName": "Tabi",
+        "seatNumber": "16"
+    },
+    {
+        "fName": "Tamara",
+        "lName": "Fiemotongha",
         "seatNumber": "16"
     },
     {
@@ -785,11 +790,6 @@
         "seatNumber": "17"
     },
     {
-        "fName": "Taiwo",
-        "lName": "Ayorinde",
-        "seatNumber": "17"
-    },
-    {
         "fName": "Abby",
         "lName": "Fabs",
         "seatNumber": "18"
@@ -817,6 +817,11 @@
     {
         "fName": "Ayo",
         "lName": "Odesola",
+        "seatNumber": "18"
+    },
+    {
+        "fName": "Adurayemi",
+        "lName": "Osuntokun",
         "seatNumber": "18"
     },
     {
@@ -871,7 +876,7 @@
     },
     {
         "fName": "Florence",
-        "lName": "Ogbon.",
+        "lName": "Ogbon",
         "seatNumber": "19"
     },
     {
@@ -925,8 +930,18 @@
         "seatNumber": "21"
     },
     {
+        "fName": "OJ",
+        "lName": "Olu-okoro",
+        "seatNumber": "21"
+    },
+    {
         "fName": "Bayo",
         "lName": "Akinyemi",
+        "seatNumber": "21"
+    },
+    {
+        "fName": "Austin",
+        "lName": "Ehwariemes",
         "seatNumber": "21"
     },
     {
@@ -1106,7 +1121,12 @@
     },
     {
         "fName": "Abisoye",
-        "lName": "Onabolu",
+        "lName": "Ogundipe",
+        "seatNumber": "25"
+    },
+    {
+        "fName": "Jonathan",
+        "lName": "Ogundipe",
         "seatNumber": "25"
     },
     {
@@ -1122,11 +1142,6 @@
     {
         "fName": "Olugbenga",
         "lName": "Adekoya",
-        "seatNumber": "25"
-    },
-    {
-        "fName": "Olajumoke",
-        "lName": "Ajibola",
         "seatNumber": "25"
     },
     {
@@ -1250,8 +1265,8 @@
         "seatNumber": "28"
     },
     {
-        "fName": "Bukola",
-        "lName": "Ilawole",
+        "fName": "Oreoluwa",
+        "lName": "Ladoja",
         "seatNumber": "28"
     },
     {
@@ -1265,18 +1280,8 @@
         "seatNumber": "29"
     },
     {
-        "fName": "Abisoye",
-        "lName": "Ogundipe",
-        "seatNumber": "29"
-    },
-    {
         "fName": "ADEYINKA",
         "lName": "OLATUNJI",
-        "seatNumber": "29"
-    },
-    {
-        "fName": "Jonathan",
-        "lName": "Ogundipe",
         "seatNumber": "29"
     },
     {
@@ -1318,11 +1323,6 @@
         "fName": "Farhia",
         "lName": "Huussein",
         "seatNumber": "30"
-    },
-    {
-        "fName": "Linda",
-        "lName": "Iyare",
-        "seatNumber": "31"
     },
     {
         "fName": "Santanna",
