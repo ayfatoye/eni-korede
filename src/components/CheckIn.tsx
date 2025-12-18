@@ -63,7 +63,7 @@ function CheckIn() {
     );
 
     if (match) {
-      alert(`Season Greetings, ${fName} ${lName}! Your table number is ${match.seatNumber} :)`);
+      alert(`Season Greetings, ${fName} ${lName}! Your table number is ${match.seatNumber}. It's also the bride's birthday, don't forget to wish her :)`);
       return;
     }
 
